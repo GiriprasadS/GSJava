@@ -36,6 +36,27 @@ public class Hello {
 
     out.println(a > b);
     out.println(a == b);
-    out.println();
+
+    String s1 = new String("Hello");
+    String s2 = new String("Hello");
+    out.println("s1 and s2 are == ? " + (s1 == s2));
+    out.println("s1 and s2 are equivalent ? " + (s1.equals(s2)));
+
+    out.println("s1 is " + s1);
+    s1 = s1.toUpperCase();
+    out.println("s1 is " + s1);
+
+    StringBuilder sb1 = new StringBuilder("Hello sb");
+    StringBuilder sb2 = new StringBuilder("Hello sb");
+
+    out.println("sb1 is " + sb1);
+    out.println("sb2 is " + sb2);
+    out.println("sb1 == sb2 " + (sb1 == sb2));
+    out.println("sb1 equavalent to sb2 " + (sb1.equals(sb2)));
+
+    out.println("sb1 is " + sb1);
+    sb1.append(" it's a lovely day");
+    out.println("sb1 is " + sb1);
+
   }
 }
